@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pixelator</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <canvas></canvas>
+  </div>
+  <div class="rows">
+    <button id="pixelate" onclick="pixelateUserInput('image', 'colormap', 'pixelsize', 'padding', 'zoom')">Pixelate</button>
+  </div>
+  <div class="columns">
+    <label id="imagelabel" for="image" onclick="toggleVisibleById('image'); toggleLabel('imagelabel')">Image text (-)</label>
+    <textarea id="image" name="image" rows="8"></textarea>
+  </div>
+  <div class="rows">
+    <div class="columns">
+      <label id="colormaplabel" for="colormap" onclick="toggleVisibleById('colormap'); toggleLabel('colormaplabel')">Color map (-)</label>
+      <textarea id="colormap" name="colormap" rows="8">{}</textarea>
+    </div>
+    <div class="columns">
+      <label id="pixelsizelabel" for="pixelsize" onclick="toggleVisibleById('pixelsize'); toggleLabel('pixelsizelabel')">Square size (-)</label>
+      <input type="number" id="pixelsize" name="pixelsize" min="1" value="10">
+    </div>
+    <div class="columns">
+      <label id="paddinglabel" for="padding" onclick="toggleVisibleById('padding'); toggleLabel('paddinglabel')">Padding (-)</label>
+      <input type="number" id="padding" name="padding" min="0" value="1">
+    </div>
+    <div class="columns">
+      <label id="zoomlabel" for="zoom" onclick="toggleVisibleById('zoom'); toggleLabel('zoomlabel')">Zoom (-)</label>
+      <input type="number" id="zoom" name="zoom" min="1" value="100">
+    </div>
+  </div>
+</body>
+<script src="./main.js">
+</script>
+</html>

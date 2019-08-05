@@ -1,0 +1,20 @@
+{
+  "name": "pixelator",
+  "version": "0.1.0",
+  "description": "Very simple matrix based pixel art",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsoptei/pixelator.git"
+  },
+  "author": "bsoptei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsoptei/pixelator/issues"
+  },
+  "homepage": "https://github.com/bsoptei/pixelator#readme"
+}

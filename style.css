@@ -1,0 +1,69 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+body {
+  background-color: purple;
+  color: white;
+}
+
+canvas {
+  background-color: white;
+  display: none;
+}
+
+label {
+  padding: 10px;
+}
+
+label:hover {
+  color: #99ff66;
+}
+
+textarea, input, canvas, button {
+  border: none;
+  margin: 20px;
+  box-shadow: 10px 10px 0 0 black;
+}
+
+textarea, input {
+  background-color: #99ff66;
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #99ff66;
+}
+
+button:active {
+  margin: 25px 20px 15px 25px;
+  box-shadow: 5px 5px 0 0 black;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.rows {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
