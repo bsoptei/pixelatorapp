@@ -15,12 +15,23 @@
   </div>
   <div class="columns">
     <label id="imagelabel" for="image" onclick="toggleVisibleById('image'); toggleLabel('imagelabel')">Image text (-)</label>
-    <textarea id="image" name="image" rows="8"></textarea>
+    <textarea id="image" name="image" rows="8">
+x_x_xxx_x___x____OO
+x_x_x___x___x___O__O
+xxx_xxx_x___x___O__O
+x_x_x___x___x___O__O
+x_x_xxx_xxx_xxx__OO</textarea>
   </div>
   <div class="rows">
     <div class="columns">
       <label id="colormaplabel" for="colormap" onclick="toggleVisibleById('colormap'); toggleLabel('colormaplabel')">Color map (-)</label>
-      <textarea id="colormap" name="colormap" rows="8">{}</textarea>
+      <textarea id="colormap" name="colormap" rows="8">
+{
+  "x": "black",
+  "_": "white",
+  "O": "#abcdef"
+}
+      </textarea>
     </div>
     <div class="columns">
       <label id="pixelsizelabel" for="pixelsize" onclick="toggleVisibleById('pixelsize'); toggleLabel('pixelsizelabel')">Square size (-)</label>
