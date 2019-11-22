@@ -1,6 +1,8 @@
 # pixelatorapp
 Very simple matrix based pixel art 
 
+[Try it here!](http://pixelatorapp.herokuapp.com/)
+
 ## How to use the Pixelator
 
 ### Step 1
