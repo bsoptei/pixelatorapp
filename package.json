@@ -2,7 +2,7 @@
   "name": "pixelator",
   "version": "0.1.0",
   "description": "Very simple matrix based pixel art",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "test": "node test.js",
     "start": "node server.js"
