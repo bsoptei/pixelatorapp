@@ -21,10 +21,13 @@ const draw = matrix => colorMap => pixelSize => padding => (zoom = 100) => (uppe
     row.forEach((pixel, x) => {
       tasks.push(
         () => {
-          context.fillStyle = colorMap[pixel] || 'white';
-          drawPixel(upperLeft.x + x * actualSize)
-            (upperLeft.y + y * actualSize)
-            (zoomPercent * pixelSize)
+          let currentColor = colorMap[pixel];
+          if (currentColor !==  undefined) {
+            context.fillStyle = currentColor;
+            drawPixel(upperLeft.x + x * actualSize)
+              (upperLeft.y + y * actualSize)
+              (zoomPercent * pixelSize)
+          }
       });
       currentWidth += 1;
     });
